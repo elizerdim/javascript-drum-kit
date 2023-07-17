@@ -3,10 +3,6 @@
     padding: 0;
 }
 
-html {
-    /* font-size: 200%; */
-}
-
 body {
     font-family: sans-serif;
     background-image: url(./images/drum-kit.jpg);
