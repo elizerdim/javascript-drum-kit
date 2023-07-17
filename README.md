@@ -61,6 +61,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
+The keyCode property is used in the tutorial, however, my code editor (VS Code) threw an error when I used it and I found out that it was deprecated. I used the key property as suggested by [W3Schools](https://www.w3schools.com/jsref/event_key_keycode.asp) instead.
+
 Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
 To see how you can add code snippets, see below:
