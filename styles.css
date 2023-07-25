@@ -9,21 +9,23 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom left;
-    width: 100vw;
-    height: 100vh;
+    min-width: 100vw;
+    min-height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
 }
 
 .keys {
     display: flex;
     justify-content: center;
     align-items: center;
+    align-content: center;
     flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1300px;
     text-align: center;
     text-transform: uppercase;
-    max-width: 1300px;
+    flex-grow: 1;
 }
 
 .key {
@@ -50,4 +52,16 @@ body {
     transform: scale(1.1);
     border-color: #ffc600;
     box-shadow: 0 0 1em #ffc600;
+}
+
+.attribution {
+    font-size: 0.7em;
+    color: lightsteelblue;
+    width: 100%;
+    text-align: center;
+    padding: 2em 0 1em;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
 }
