@@ -45,7 +45,7 @@ Users should be able to:
 
 - Instead of copying everything in the tutorial or the project repository, I tried to complete the project by myself and make the code my own as much as possible. I used a different approach to sizing the boxes with Flexbox and did a few things in JavaScript code slightly differently. In the end, I feel confident about each line of code I wrote for this project.
 
-- The keyCode property is used in the tutorial, however, my code editor (VS Code) threw an error when I used it and I found out that it was deprecated. I used the key property as suggested by [W3Schools](https://www.w3schools.com/jsref/event_key_keycode.asp) instead and also used toLowerCase() function to make sure it works when Caps Lock is on too.
+- The keyCode property is used in the tutorial, however, my code editor (VS Code) threw an error when I used it and I found out that it was deprecated. At first, I used the 'key' property but then replaced it with 'code' property as it doesn't require any checks for lower or upper case.
 
 - I did't use the Array.from() method to convert the nodelist into an array because my research showed that forEach() method can be used on nodelists.
 
