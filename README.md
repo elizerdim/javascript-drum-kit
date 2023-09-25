@@ -53,6 +53,8 @@ Users should be able to:
 
 - I learned about the currentTime property of audio/video elements.
 
+- I used a compressed file for the background image after realizing the bigger file slowed down page load.
+
 ### Continued development
 
 In future projects, I'd like to learn how to use other events in JavaScript and how to make this project work on touchscreen devices.
@@ -60,3 +62,5 @@ In future projects, I'd like to learn how to use other events in JavaScript and 
 ### Useful resources
 
 - [Event reference](https://developer.mozilla.org/en-US/docs/Web/Events) - Useful event reference from MDN.
+- [Optimizing images for the web](https://dev.to/prototyp/optimizing-images-for-the-web-an-in-depth-guide-4j7d) - An in-depth guide for image optimization for the web
+- [Online image compressor](https://compressor.io/) - An online tool for compressing image files
