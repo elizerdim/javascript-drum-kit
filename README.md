@@ -43,24 +43,28 @@ Users should be able to:
 
 ### What I learned
 
-- Instead of copying everything in the tutorial or the project repository, I tried to complete the project by myself and make the code my own as much as possible. I used a different approach to sizing the boxes with Flexbox and did a few things in JavaScript code slightly differently. In the end, I feel confident about each line of code I wrote for this project.
-
-- The keyCode property is used in the tutorial, however, my code editor (VS Code) threw an error when I used it and I found out that it was deprecated. At first, I used the 'key' property but then replaced it with 'code' property as it doesn't require any checks for lower or upper case.
+- The 'keyCode' property is used in the tutorial, but I found out it was deprecated, so I learned about **'key'** and **'code'** properties. 'key' returns the key value (what is typed on the screen when the key is pressed) and 'code' returns the physical key code (regardless of the user's keyboard layout). 
 
 - I did't use the Array.from() method to convert the nodelist into an array because my research showed that forEach() method can be used on nodelists.
 
-- I learned how to use keydown and transitionend events.
+- I learned how to use **'keydown'** and **'transitionend'** events.
 
-- I learned about the currentTime property of audio/video elements.
+- The following code should be used in the callback function of the event listener to be able to play the sounds again before waiting for them to end.
+```js
+audio.currentTime = 0;
+```
 
-- I used a compressed file for the background image after realizing the bigger file slowed down page load.
+- I used a compressed file for the background image after realizing the bigger file slowed down page load. There are some links in the Useful resources section below.
+
+- I revisited this project months later to add 'click' event so that it can be used on mobile phones too. I utilized **event bubbling** and used .parentNode and .getAttribute methods to get the data-key value when the children of the .key elements are clicked.
 
 ### Continued development
 
-In future projects, I'd like to learn how to use other events in JavaScript and how to make this project work on touchscreen devices.
+In future projects, I'd like to learn how to use other events in JavaScript and how to make this project work on touchscreen devices. -- I revisited the project later on and added 'click' event for this :)
 
 ### Useful resources
 
-- [Event reference](https://developer.mozilla.org/en-US/docs/Web/Events) - Useful event reference from MDN.
+- [Event reference](https://developer.mozilla.org/en-US/docs/Web/Events) - Useful event reference from MDN
 - [Optimizing images for the web](https://dev.to/prototyp/optimizing-images-for-the-web-an-in-depth-guide-4j7d) - An in-depth guide for image optimization for the web
 - [Online image compressor](https://compressor.io/) - An online tool for compressing image files
+- [Event bubbling and event capturing](https://www.javascripttutorial.net/javascript-dom/javascript-events/) - Event flow and how to utilize event bubbling is explained in this page
