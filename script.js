@@ -10,8 +10,8 @@ function playSound(e) {
     //go to parent node to get the value when children are clicked
     const dataKey = 
         e.code || 
-        e.target.getAttribute("data-key") || 
-        e.target.parentNode.getAttribute("data-key");
+        e.target.dataset.key || 
+        e.target.parentNode.dataset.key;
 
     const audio = document.querySelector(`audio[data-key="${dataKey}"]`);
     const key = document.querySelector(`article[data-key="${dataKey}"]`);
